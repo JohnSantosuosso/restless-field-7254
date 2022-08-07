@@ -1,0 +1,6 @@
+<h1>Airline Information</h1>
+<%=@airline.name%>
+<p>Passengers</p>
+<%@airline.get_passengers.each do |passenger|%>
+  <%=passenger.name%>
+<%end%>
